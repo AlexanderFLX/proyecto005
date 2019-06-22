@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'proyecto005';
+  mensaje = '';
+
+  // Método que captura el evento emitido por la componente cronómetro
+  actualizar(t) {
+    this.mensaje = t + ' (se actualiza cada 10 segundos)';
+  }
 }
